@@ -5,6 +5,7 @@
 ## Status
 ### Master
 + [![Build Status](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas.svg?branch=master)](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas)
++ [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=iwvg-devops-alejandro-cabezas&metric=alert_status)](https://sonarcloud.io/dashboard?id=iwvg-devops-alejandro-cabezas)
 
 ### Develop
 + [![Build Status](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas.svg?branch=develop)](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas) 
