@@ -15,4 +15,4 @@ before_install:
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
-  - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=alex-organization -Dsonar.login=$SONAR
+  - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=alexcabezas2018 -Dsonar.login=$SONAR
