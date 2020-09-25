@@ -1,7 +1,15 @@
 ## [Máster en Ingeniería Web por la Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)
 ## Ingeniería Web: Visión General (IWVG) DevOps
 > Este proyecto es una Plantilla de apoyo docente de la asignatura.
-[![Build Status](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas.svg?branch=develop)](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas)
+
+## Status
+### Master
++ [![Build Status](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas.svg?branch=master)](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas)
+
+### Develop
++ [![Build Status](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas.svg?branch=develop)](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas) 
+
+
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:
 ```sh
