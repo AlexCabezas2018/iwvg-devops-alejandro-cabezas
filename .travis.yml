@@ -6,7 +6,8 @@ branches:
     - "/^release-[0-999].[0-999]$/"
     - master
 notifications:
-  slack: miw-upm:X3X7kVNu05qIEK9IvCoSgbje
+  slack:
+    secure: FhkzmmJytZ1CZnxrxBeCqZUTzjyus9izIpTv5xE/ds8Ipj5SJ3x5uUGtaE0nInr4XbsQbT16IDl8u8+vFcI5FNGFpQS+TVJxixrn3h/Ouz9B1m9KN1DWqgKLPamDlA8zGzkJmy0hvNR2FSpXi7qeVe/LLVwRCA5YMb8kXEuPrc1rR1AT3aE+qlKuJY20XU7LQGvWLePYm8YIEX/V+FFfzCCdbwAjXwsryn1xspijlWuSqIgt6jqN05zBOQCn2C2hDUGPI1MPwB7VkSSBOB5A02RUc4mQw5UpOhzY9XrINjASgFs/wTMtBydqRzKjzctb2eRfHa5Ktz3MJKOODn5CJyXNuPbRN3IrUXxngiNhO5D2u2Zl9dPBDBe366gdxFzviQfklT+m4nDv7kKqtzkOKM7IUzjdb81cgS8ARd1xJYYAkGaM28eXMS5xe7jTUgnbClHnJRUZQ1i35TEQ51Dl5kG9QEs/N55kEVtYJ7g728Hj5mKD9DReh0pDeXVpyuCmqU2/9J4SkWL2VEnACkcdioleT+jV4NAdDsJnLayz9kfJ7ddpJ/LGOJoo4jOavj0G9OAjFHmkCCgFySCqCK4Er2I0c6kv9TfgluObdEeJrUq8TBzBXpcn657xB45Te5AmHGsEA4yHEEgV7c+WWiOCl4b0S7L5HuvrLcsaHVLagjY=
   email:
     recipients:
       - alexcabezas0705@gmail.es
