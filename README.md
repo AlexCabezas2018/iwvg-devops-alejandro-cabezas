@@ -14,6 +14,8 @@
 ### Develop
 + [![Build Status](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas.svg?branch=develop)](https://travis-ci.org/AlexCabezas2018/iwvg-devops-alejandro-cabezas) 
 
+### Slack
+![Slack-image](src/main/resources/images/Slack-with-Travis.PNG)
 
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:
