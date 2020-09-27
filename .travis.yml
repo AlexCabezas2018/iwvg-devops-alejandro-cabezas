@@ -6,6 +6,7 @@ branches:
     - "/^release-[0-999].[0-999]$/"
     - master
 notifications:
+  slack: miw-upm:X3X7kVNu05qIEK9IvCoSgbje
   email:
     recipients:
       - alexcabezas0705@gmail.es
