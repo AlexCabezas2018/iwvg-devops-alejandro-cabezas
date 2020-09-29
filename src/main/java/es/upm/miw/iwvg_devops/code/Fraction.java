@@ -1,4 +1,4 @@
-package es.upm.code;
+package es.upm.miw.iwvg_devops.code;
 
 public class Fraction {
     private int numerator;
