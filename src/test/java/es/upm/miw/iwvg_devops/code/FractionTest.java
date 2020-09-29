@@ -1,6 +1,5 @@
 package es.upm.miw.iwvg_devops.code;
 
-import es.upm.code.Fraction;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
