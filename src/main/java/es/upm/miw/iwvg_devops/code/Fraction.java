@@ -63,4 +63,11 @@ public class Fraction {
                 ", denominator=" + denominator +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Fraction)) return false;
+        return this.numerator == ((Fraction)obj).getNumerator()
+                && this.denominator == ((Fraction)obj).getDenominator();
+    }
 }

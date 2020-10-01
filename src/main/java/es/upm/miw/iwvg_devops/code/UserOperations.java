@@ -4,9 +4,9 @@ public class UserOperations {
     private UserDatabase userDatabase = new UserDatabase();
 
     public String findUserIdBySomeProperFraction(Fraction fraction) {
-        if(fraction.isImproper()) return null;
+        assert fraction.isProper();
         return userDatabase.findAll()
-                .filter(user -> user.getFractions().stream().anyMatch(fr -> fr.isEquivalent(fraction)))
+                .filter(user -> user.getFractions().stream().anyMatch(fr -> fr.equals(fraction)))
                 .map(User::getId)
                 .findFirst()
                 .orElse(null);
