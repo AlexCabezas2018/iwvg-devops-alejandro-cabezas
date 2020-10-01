@@ -31,4 +31,14 @@ public class FractionOperationsTest {
         Fraction fractionFromUser = fractionOperations.findFirstProperFractionByUserId("8");
         assertNull(fractionFromUser);
     }
+
+    @Test
+    public void testFindFractionAdditionByUserIdUserExist() {
+        assertEquals(3.0, fractionOperations.findFractionAdditionByUserId("1"), 1e10-5);
+    }
+
+    @Test
+    public void testFindFractionAdditionByUserIdUserDoesNotExist() {
+        assertEquals(0.0, fractionOperations.findFractionAdditionByUserId("10"));
+    }
 }
