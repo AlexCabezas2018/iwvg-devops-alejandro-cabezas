@@ -32,4 +32,24 @@ public class UserOperationsTest {
         Fraction fractionToSearch = new Fraction(10, 7);
         assertThrows(AssertionError.class, () -> userOperations.findUserIdBySomeProperFraction(fractionToSearch));
     }
+
+    @Test
+    public void testFindUserNameBySomeImproperFractionFindsUserName() {
+        Fraction fractionToSearch = new Fraction(1, 0);
+        String userId = userOperations.findUserNameBySomeImproperFraction(fractionToSearch);
+        assertEquals("Paula", userId);
+    }
+
+    @Test
+    public void testFindUserNameBySomeImproperFractionDoesNotFindUserName() {
+        Fraction fractionToSearch = new Fraction(100, 70);
+        String userId = userOperations.findUserNameBySomeImproperFraction(fractionToSearch);
+        assertNull(userId);
+    }
+
+    @Test
+    public void testFindUserNameBySomeImproperFractionFractionIsProper() {
+        Fraction fractionToSearch = new Fraction(7, 10);
+        assertThrows(AssertionError.class, () -> userOperations.findUserNameBySomeImproperFraction(fractionToSearch));
+    }
 }
