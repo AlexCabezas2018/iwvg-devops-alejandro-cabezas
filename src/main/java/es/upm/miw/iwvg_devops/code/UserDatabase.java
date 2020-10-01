@@ -1,6 +1,7 @@
 package es.upm.miw.iwvg_devops.code;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public class UserDatabase {
@@ -47,5 +48,9 @@ public class UserDatabase {
                 new User("5", "Antonio", "Blanco", fractions5),
                 new User("6", "Paula", "Torres", fractions6)
         );
+    }
+
+    public Optional<User> findById(String id) {
+        return findAll().filter(user -> user.getId().equals(id)).findFirst();
     }
 }
