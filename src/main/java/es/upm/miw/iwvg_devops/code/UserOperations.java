@@ -6,7 +6,7 @@ public class UserOperations {
     private UserDatabase userDatabase = new UserDatabase();
 
     public String findUserIdBySomeProperFraction(Fraction fraction) {
-        assert fraction.isProper();
+        if(fraction.isImproper()) throw new AssertionError();
         return findUsersWhichContainsFraction(fraction)
                 .map(User::getId)
                 .findFirst()
@@ -14,7 +14,7 @@ public class UserOperations {
     }
 
     public String findUserNameBySomeImproperFraction(Fraction fraction) {
-        assert fraction.isImproper();
+        if(fraction.isProper()) throw new AssertionError();
         return findUsersWhichContainsFraction(fraction)
                 .map(User::getName)
                 .findFirst()

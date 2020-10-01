@@ -6,23 +6,37 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class UserTest {
+class UserTest {
     User user;
 
     @BeforeEach
-    public void setup() {
+    void setup() {
         user = new User("id-1", "Alejandro", "Cabezas", new ArrayList<>());
     }
 
     @Test
-    public void testFullName() {
+    void testFullName() {
         assertEquals("Alejandro Cabezas", user.fullName());
     }
 
     @Test
-    public void testInitials() {
+    void testInitials() {
         assertEquals("A.", user.initials());
+    }
+
+    @Test
+    void testEmptyConstructor() {
+        user = new User();
+        assertTrue(user.getFractions().isEmpty());
+    }
+
+    @Test
+    void testAddFraction() {
+        user = new User();
+        user.addFraction(new Fraction());
+        assertEquals(1, user.getFractions().size());
     }
 
 }

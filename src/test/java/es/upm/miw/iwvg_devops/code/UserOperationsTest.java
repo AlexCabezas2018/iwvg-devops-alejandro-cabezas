@@ -5,50 +5,50 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class UserOperationsTest {
+class UserOperationsTest {
     private UserOperations userOperations;
 
     @BeforeEach
-    public void setup() {
+    void setup() {
         userOperations = new UserOperations();
     }
 
     @Test
-    public void testFindUserIdBySomeProperFractionFindsUserId() {
+    void testFindUserIdBySomeProperFractionFindsUserId() {
         Fraction fractionToSearch = new Fraction(0, 1);
         String userId = userOperations.findUserIdBySomeProperFraction(fractionToSearch);
         assertEquals("1", userId);
     }
 
     @Test
-    public void testFindUserIdBySomeProperFractionDoesNotFindUserId() {
+    void testFindUserIdBySomeProperFractionDoesNotFindUserId() {
         Fraction fractionToSearch = new Fraction(0, 10);
         String userId = userOperations.findUserIdBySomeProperFraction(fractionToSearch);
         assertNull(userId);
     }
 
     @Test
-    public void testFindUserIdBySomeProperFractionFractionIsImproper() {
+    void testFindUserIdBySomeProperFractionFractionIsImproper() {
         Fraction fractionToSearch = new Fraction(10, 7);
         assertThrows(AssertionError.class, () -> userOperations.findUserIdBySomeProperFraction(fractionToSearch));
     }
 
     @Test
-    public void testFindUserNameBySomeImproperFractionFindsUserName() {
+    void testFindUserNameBySomeImproperFractionFindsUserName() {
         Fraction fractionToSearch = new Fraction(1, 0);
         String userId = userOperations.findUserNameBySomeImproperFraction(fractionToSearch);
         assertEquals("Paula", userId);
     }
 
     @Test
-    public void testFindUserNameBySomeImproperFractionDoesNotFindUserName() {
+    void testFindUserNameBySomeImproperFractionDoesNotFindUserName() {
         Fraction fractionToSearch = new Fraction(100, 70);
         String userId = userOperations.findUserNameBySomeImproperFraction(fractionToSearch);
         assertNull(userId);
     }
 
     @Test
-    public void testFindUserNameBySomeImproperFractionFractionIsProper() {
+    void testFindUserNameBySomeImproperFractionFractionIsProper() {
         Fraction fractionToSearch = new Fraction(7, 10);
         assertThrows(AssertionError.class, () -> userOperations.findUserNameBySomeImproperFraction(fractionToSearch));
     }
